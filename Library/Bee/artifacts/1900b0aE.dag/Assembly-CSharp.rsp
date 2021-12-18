@@ -106,8 +106,14 @@
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
 -define:ENABLE_LEGACY_INPUT_MANAGER
+-define:PHOTON_UNITY_NETWORKING
+-define:PUN_2_0_OR_NEWER
+-define:PUN_2_OR_NEWER
+-define:PUN_2_19_OR_NEWER
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
+-r:"Assets/Multiplayer/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll"
+-r:"Assets/Multiplayer/Photon/PhotonLibs/WebSocket/websocket-sharp.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.22f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.22f1/Editor/Data/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.22f1/Editor/Data/Managed/UnityEngine/UnityEditor.dll"
@@ -301,7 +307,17 @@
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.22f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.22f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll"
 -r:"D:/Nickso/UEA/TCC/Jogo/UltimateTanks/The Ultimate Tanks/Library/PackageCache/com.unity.visualscripting@1.6.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/PhotonChat.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/PhotonRealtime.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/PhotonUnityNetworking.Demos.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/PhotonUnityNetworking.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/PhotonUnityNetworking.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/PhotonUnityNetworking.Utilities.Culling.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/PhotonUnityNetworking.Utilities.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/PsdPlugin.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/PunDemos.DemoHubEditor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/PunDemos.DemoSlotcarEditor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.2D.Animation.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.2D.Animation.Runtime.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.2D.Animation.Triangle.Runtime.ref.dll"
@@ -340,6 +356,23 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/VSSettingsProvider.ref.dll"
+"Assets/Multiplayer/Photon/PhotonChat/Demos/Common/EventSystemSpawner.cs"
+"Assets/Multiplayer/Photon/PhotonChat/Demos/Common/OnStartDelete.cs"
+"Assets/Multiplayer/Photon/PhotonChat/Demos/Common/TextButtonTransition.cs"
+"Assets/Multiplayer/Photon/PhotonChat/Demos/Common/TextToggleIsOnTransition.cs"
+"Assets/Multiplayer/Photon/PhotonChat/Demos/DemoChat/AppSettingsExtensions.cs"
+"Assets/Multiplayer/Photon/PhotonChat/Demos/DemoChat/ChannelSelector.cs"
+"Assets/Multiplayer/Photon/PhotonChat/Demos/DemoChat/ChatAppIdCheckerUI.cs"
+"Assets/Multiplayer/Photon/PhotonChat/Demos/DemoChat/ChatGui.cs"
+"Assets/Multiplayer/Photon/PhotonChat/Demos/DemoChat/FriendItem.cs"
+"Assets/Multiplayer/Photon/PhotonChat/Demos/DemoChat/IgnoreUiRaycastWhenInactive.cs"
+"Assets/Multiplayer/Photon/PhotonChat/Demos/DemoChat/NamePickGui.cs"
+"Assets/Multiplayer/Photon/PhotonLibs/WebSocket/SocketWebTcp.cs"
+"Assets/Multiplayer/Photon/PhotonLibs/WebSocket/WebSocket.cs"
+"Assets/Multiplayer/Photon/PhotonRealtime/Demos/DemoLoadBalancing/ConnectAndJoinRandomLb.cs"
+"Assets/Multiplayer/Scripts/GameManager.cs"
+"Assets/Multiplayer/Scripts/PlayerController.cs"
+"Assets/Multiplayer/Scripts/PlayerFeet.cs"
 "Assets/Scripts/AimTurret.cs"
 "Assets/Scripts/Bullet.cs"
 "Assets/Scripts/Damagable.cs"
