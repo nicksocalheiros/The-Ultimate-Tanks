@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3250963349157541328}
   - component: {fileID: 3250963349157541330}
   - component: {fileID: 3250963349157541329}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Chassis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,10 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2d: {fileID: 0}
-  maxSpeed: 70
-  rotationSpeed: 200
-  acceleration: 70
-  deacceleration: 90
+  movementData: {fileID: 0}
   currentSpeed: 30
   currentForewardDirection: 1
 --- !u!1 &3250963349690556228
@@ -116,7 +113,7 @@ GameObject:
   - component: {fileID: 3250963349690556230}
   - component: {fileID: 3250963350189630317}
   - component: {fileID: 3250963349690556229}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Tank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -238,7 +235,7 @@ GameObject:
   - component: {fileID: 3250963349915104790}
   - component: {fileID: 3250963349915104792}
   - component: {fileID: 3250963349915104791}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TurretParent
   m_TagString: Untagged
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
@@ -334,7 +331,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3250963350501401039}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -366,7 +363,8 @@ GameObject:
   - component: {fileID: 3250963350568444746}
   - component: {fileID: 3250963350568444748}
   - component: {fileID: 3250963350568444747}
-  m_Layer: 0
+  - component: {fileID: 7241753207602022121}
+  m_Layer: 7
   m_Name: Turrent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -454,6 +452,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turretBarrels:
   - {fileID: 3250963350501401039}
-  bulletPrefab: {fileID: 5662424287854282843, guid: 6badeeef00e4edc4a912a0825f70d11d, type: 3}
-  reloadDelay: 1
+  turretData: {fileID: 11400000, guid: 4fd0cf06d617d024eb27b719e48aee9d, type: 2}
   currentDelay: 0
+  bulletPoolCount: 10
+--- !u!114 &7241753207602022121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3250963350568444745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e68d9cb0c2af9db48ad4ffbb141ea277, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToPool: {fileID: 0}
+  poolSize: 10
+  spawnedObjectsParent: {fileID: 0}

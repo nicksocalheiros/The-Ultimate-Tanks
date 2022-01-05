@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4979533913068115899}
   - component: {fileID: 2821656519719733753}
   - component: {fileID: 4313305113405323946}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -146,5 +146,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  damage: 30
+  damage: 50
   maxDistance: 10
