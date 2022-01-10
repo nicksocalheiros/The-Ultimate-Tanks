@@ -31,7 +31,7 @@ public class TankController : MonoBehaviour
         tankMover.Move(movementVector);
     }
 
-    public void HandleTorretMovement(Vector2 pointerPosition)
+    public void HandleTurretMovement(Vector2 pointerPosition)
     {
         aimTurret.Aim(pointerPosition);
     }
