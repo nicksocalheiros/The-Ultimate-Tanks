@@ -37,6 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Multiplayer\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs" />
+     <Compile Include="Assets\Scripts\Ai\AIDetector.cs" />
      <Compile Include="Assets\Multiplayer\Photon\PhotonLibs\WebSocket\SocketWebTcp.cs" />
      <Compile Include="Assets\Scripts\AimTurret.cs" />
      <Compile Include="Assets\Multiplayer\Photon\PhotonChat\Demos\DemoChat\ChatAppIdCheckerUI.cs" />
@@ -47,14 +48,18 @@
      <Compile Include="Assets\Multiplayer\Photon\PhotonChat\Demos\Common\EventSystemSpawner.cs" />
      <Compile Include="Assets\Multiplayer\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\PlayerInput.cs" />
+     <Compile Include="Assets\Scripts\Ai\AIBehaviour.cs" />
      <Compile Include="Assets\Multiplayer\Photon\PhotonLibs\WebSocket\WebSocket.cs" />
      <Compile Include="Assets\Multiplayer\Photon\PhotonChat\Demos\Common\TextButtonTransition.cs" />
      <Compile Include="Assets\Scripts\TankMover.cs" />
      <Compile Include="Assets\Multiplayer\Scripts\PlayerFeet.cs" />
+     <Compile Include="Assets\Scripts\Ai\DefaultEnemyAI.cs" />
+     <Compile Include="Assets\Scripts\Ai\AIPatrolStaticBehaviour.cs" />
      <Compile Include="Assets\Multiplayer\Photon\PhotonChat\Demos\DemoChat\NamePickGui.cs" />
      <Compile Include="Assets\Scripts\ObjectPool.cs" />
      <Compile Include="Assets\Multiplayer\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\DataSO\TurretData.cs" />
+     <Compile Include="Assets\Scripts\Ai\AiShootBehaviour.cs" />
      <Compile Include="Assets\Multiplayer\Photon\PhotonChat\Demos\DemoChat\IgnoreUiRaycastWhenInactive.cs" />
      <Compile Include="Assets\Scripts\DataSO\TankMovementData.cs" />
      <Compile Include="Assets\Scripts\Turret.cs" />
@@ -66,11 +71,6 @@
      <Compile Include="Assets\Scripts\Damagable.cs" />
      <Compile Include="Assets\Multiplayer\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
      <Compile Include="Assets\Scripts\DataSO\BulletData.cs" />
-     <Compile Include="Assets\Scripts\Ai\AIDetector.cs" />
-     <Compile Include="Assets\Scripts\Ai\DefaultEnemyAI.cs" />
-     <Compile Include="Assets\Scripts\Ai\AIBehaviour.cs" />
-     <Compile Include="Assets\Scripts\Ai\AIPatrolStaticBehaviour.cs" />
-     <Compile Include="Assets\Scripts\Ai\AiShootBehaviour.cs" />
      <None Include="Assets\Multiplayer\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />
      <None Include="Assets\Multiplayer\Photon\PhotonUnityNetworking\changelog.txt" />
      <None Include="Assets\Multiplayer\Photon\PhotonLibs\changes-library.txt" />

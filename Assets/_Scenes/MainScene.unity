@@ -155,7 +155,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1581991675}
-  - {fileID: 1052456273}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -296,11 +295,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3250963350189630316, guid: 14dafd119b0a9d843894bb115cc89c20, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.65
+      value: -1.61
       objectReference: {fileID: 0}
     - target: {fileID: 3250963350189630316, guid: 14dafd119b0a9d843894bb115cc89c20, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.11
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 3250963350189630316, guid: 14dafd119b0a9d843894bb115cc89c20, type: 3}
       propertyPath: m_LocalPosition.z
@@ -459,11 +458,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1052456272}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.65, y: -0.11, z: 0.09}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 50003675}
-  m_RootOrder: 1
+  m_Father: {fileID: 1581991675}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1052456274
 MonoBehaviour:
@@ -477,9 +476,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b32e07947c6f644db563cd212577a43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  viewRadius: 3.5
+  viewRadius: 4
   detectionCheckDelay: 0.1
-  target: {fileID: 1581991675}
+  target: {fileID: 0}
   playerLayerMask:
     serializedVersion: 2
     m_Bits: 1024
@@ -116166,40 +116165,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcfd6f72dc33b2d409dbf733cf46b1f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1581991680
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1581991674}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13504611e7019f946bffcdacc91a5565, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainCamera: {fileID: 0}
-  OnShoot:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1581991676}
-        m_TargetAssemblyTypeName: TankController, Assembly-CSharp
-        m_MethodName: HandleShoot
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnMoveBody:
-    m_PersistentCalls:
-      m_Calls: []
-  OnMoveTurret:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &1581991681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116352,7 +116317,7 @@ PrefabInstance:
     - target: {fileID: 3250963349157541329, guid: 14dafd119b0a9d843894bb115cc89c20, type: 3}
       propertyPath: movementData
       value: 
-      objectReference: {fileID: 11400000, guid: 5fec3c0ea1e208c4e90c0ad2907d7961, type: 2}
+      objectReference: {fileID: 11400000, guid: 242b0f2c1c90ca6428abfa75b1417f18, type: 2}
     - target: {fileID: 3250963349690556228, guid: 14dafd119b0a9d843894bb115cc89c20, type: 3}
       propertyPath: m_Name
       value: Tank
