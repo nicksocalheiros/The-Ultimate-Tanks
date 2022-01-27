@@ -397,6 +397,7 @@
 "Assets/Scripts/TankController.cs"
 "Assets/Scripts/TankMover.cs"
 "Assets/Scripts/Turret.cs"
+"Assets/Scripts/UiFollowTank.cs"
 -langversion:8.0
 
 /deterministic

@@ -109219,7 +109219,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1065215772}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.15, y: -7.93, z: 0}
+  m_LocalPosition: {x: -1.86, y: -11.01, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1028980695}
@@ -116157,7 +116157,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2143712458}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -7.93, z: 0}
+  m_LocalPosition: {x: 0, y: -8.35, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1028980695}
@@ -116320,9 +116320,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5575754840061250916, guid: 102afb40b10a6c04e92b6f870e41a956, type: 3}
+      propertyPath: m_Name
+      value: EnemyTank
+      objectReference: {fileID: 0}
     - target: {fileID: 5575754840061250917, guid: 102afb40b10a6c04e92b6f870e41a956, type: 3}
       propertyPath: MaxHealth
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5575754840061250919, guid: 102afb40b10a6c04e92b6f870e41a956, type: 3}
+      propertyPath: m_BodyType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6823516701332373669, guid: 102afb40b10a6c04e92b6f870e41a956, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6823516701332373669, guid: 102afb40b10a6c04e92b6f870e41a956, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6952628245143668516, guid: 102afb40b10a6c04e92b6f870e41a956, type: 3}
       propertyPath: m_RootOrder
@@ -116376,6 +116392,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7438516556171493620, guid: 102afb40b10a6c04e92b6f870e41a956, type: 3}
+      propertyPath: m_Name
+      value: EnemyTank
+      objectReference: {fileID: 0}
+    - target: {fileID: 7438516557870120156, guid: 102afb40b10a6c04e92b6f870e41a956, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7438516557870120156, guid: 102afb40b10a6c04e92b6f870e41a956, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 7948153822249663672, guid: 102afb40b10a6c04e92b6f870e41a956, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.566
+      objectReference: {fileID: 0}
+    - target: {fileID: 7948153822249663672, guid: 102afb40b10a6c04e92b6f870e41a956, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.69
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 102afb40b10a6c04e92b6f870e41a956, type: 3}
 --- !u!1001 &7813087950733365858
@@ -116385,6 +116421,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2368474386648570570, guid: faf69ae3432ef8942a2eac7815b36997, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3785967197515775153, guid: faf69ae3432ef8942a2eac7815b36997, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3785967197515775153, guid: faf69ae3432ef8942a2eac7815b36997, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7813087948616827522, guid: faf69ae3432ef8942a2eac7815b36997, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -116441,9 +116489,13 @@ PrefabInstance:
       propertyPath: patrolPath
       value: 
       objectReference: {fileID: 1028980696}
+    - target: {fileID: 7813087950241123048, guid: faf69ae3432ef8942a2eac7815b36997, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7813087950241123050, guid: faf69ae3432ef8942a2eac7815b36997, type: 3}
       propertyPath: MaxHealth
-      value: 2
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7813087950241123050, guid: faf69ae3432ef8942a2eac7815b36997, type: 3}
       propertyPath: OnHit.m_PersistentCalls.m_Calls.Array.size
