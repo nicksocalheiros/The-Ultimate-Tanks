@@ -123,6 +123,19 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &178931043 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3250963349690556228, guid: 14dafd119b0a9d843894bb115cc89c20, type: 3}
+  m_PrefabInstance: {fileID: 3250963349423495504}
+  m_PrefabAsset: {fileID: 0}
+--- !u!81 &178931047
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178931043}
+  m_Enabled: 1
 --- !u!1 &320729281
 GameObject:
   m_ObjectHideFlags: 0
@@ -152,7 +165,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 0e44aa6bd5fd1644fbb793cb61dfff19, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.05
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -109236,7 +109249,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1100679476}
   - component: {fileID: 1100679475}
-  - component: {fileID: 1100679474}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -109244,14 +109256,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1100679474
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1100679473}
-  m_Enabled: 1
 --- !u!20 &1100679475
 Camera:
   m_ObjectHideFlags: 0
@@ -116398,7 +116402,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3250963350189630317, guid: 14dafd119b0a9d843894bb115cc89c20, type: 3}
   m_PrefabInstance: {fileID: 3250963349423495504}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 178931043}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dcfd6f72dc33b2d409dbf733cf46b1f6, type: 3}
@@ -116669,7 +116673,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3250963349690556229, guid: 14dafd119b0a9d843894bb115cc89c20, type: 3}
       propertyPath: OnHit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3250963349690556229, guid: 14dafd119b0a9d843894bb115cc89c20, type: 3}
       propertyPath: OnHealthChange.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -116867,7 +116871,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2368474386648570570, guid: faf69ae3432ef8942a2eac7815b36997, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3785967197515775153, guid: faf69ae3432ef8942a2eac7815b36997, type: 3}
       propertyPath: m_AnchorMax.x
