@@ -38,7 +38,7 @@ public class Turret : MonoBehaviour
         if (canShoot == false)
         {
             currentDelay -= Time.deltaTime;
-            OnReloading?.Invoke(currentDelay);
+            OnReloading?.Invoke(currentDelay / turretData.reloadDelay);
             if (currentDelay <= 0)
             {
                 canShoot = true;
@@ -55,6 +55,9 @@ public class Turret : MonoBehaviour
 
             foreach (var barrel in turretBarrels)
             {
+                var hit = Physics2D.Raycast(barrel.position, barrel.up);
+                if (hit.collider != null) 
+                    Debug.Log(hit.collider.name);
                 //GameObject bullet =  Instantiate(bulletPrefab);
                 GameObject bullet =  bulletPool.CreateObject();
                 bullet.transform.position = barrel.position;

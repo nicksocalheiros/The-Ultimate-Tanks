@@ -63,12 +63,14 @@
      <Compile Include="Assets\Multiplayer\Photon\PhotonChat\Demos\DemoChat\NamePickGui.cs" />
      <Compile Include="Assets\Scripts\ObjectPool.cs" />
      <Compile Include="Assets\Multiplayer\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\EngineAudio.cs" />
      <Compile Include="Assets\Scripts\DataSO\TurretData.cs" />
      <Compile Include="Assets\Scripts\InstantiateUtil.cs" />
      <Compile Include="Assets\Scripts\Ai\AiShootBehaviour.cs" />
      <Compile Include="Assets\Multiplayer\Photon\PhotonChat\Demos\DemoChat\IgnoreUiRaycastWhenInactive.cs" />
      <Compile Include="Assets\Scripts\DataSO\TankMovementData.cs" />
      <Compile Include="Assets\Scripts\Turret.cs" />
+     <Compile Include="Assets\Scripts\TrackMarksSpawner.cs" />
      <Compile Include="Assets\Multiplayer\Photon\PhotonChat\Demos\DemoChat\FriendItem.cs" />
      <Compile Include="Assets\Scripts\DestroyIfDisabled.cs" />
      <Compile Include="Assets\Multiplayer\Photon\PhotonChat\Demos\DemoChat\ChatGui.cs" />
@@ -78,8 +80,6 @@
      <Compile Include="Assets\Scripts\Damagable.cs" />
      <Compile Include="Assets\Multiplayer\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
      <Compile Include="Assets\Scripts\DataSO\BulletData.cs" />
-     <Compile Include="Assets\Scripts\EngineAudio.cs" />
-     <Compile Include="Assets\Scripts\TrackMarksSpawner.cs" />
      <None Include="Assets\Multiplayer\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />
      <None Include="Assets\Multiplayer\Photon\PhotonUnityNetworking\changelog.txt" />
      <None Include="Assets\Multiplayer\Photon\PhotonLibs\changes-library.txt" />
