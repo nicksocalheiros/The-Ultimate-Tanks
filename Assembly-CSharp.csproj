@@ -36,12 +36,6 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="D:\Nickso\UEA\TCC\Jogo\UltimateTanks\The Ultimate Tanks\Assets\Photon\PhotonLibs\Metro\Photon3Unity3D.dll" />
-    <Analyzer Include="D:\Nickso\UEA\TCC\Jogo\UltimateTanks\The Ultimate Tanks\Assets\Photon\PhotonLibs\Photon3Unity3D.dll" />
-    <Analyzer Include="D:\Nickso\UEA\TCC\Jogo\UltimateTanks\The Ultimate Tanks\Assets\Photon\PhotonLibs\WebSocket\websocket-sharp.dll" />
-    <Analyzer Include="D:\Nickso\UEA\TCC\Jogo\UltimateTanks\The Ultimate Tanks\Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.dll" />
-  </ItemGroup>
-  <ItemGroup>
      <Compile Include="Assets\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs" />
      <Compile Include="Assets\Scripts\Ai\AIDetector.cs" />
      <Compile Include="Assets\Photon\PhotonLibs\WebSocket\SocketWebTcp.cs" />
@@ -56,6 +50,7 @@
      <Compile Include="Assets\Scripts\DestroyUtil.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\EventSystemSpawner.cs" />
      <Compile Include="Assets\Scripts\PlayerInput.cs" />
+     <Compile Include="Assets\Scripts\PlayerMultiplayController.cs" />
      <Compile Include="Assets\Scripts\ExitLevel.cs" />
      <Compile Include="Assets\Scripts\DisableUtil.cs" />
      <Compile Include="Assets\Scripts\ObjectGeneratorRandomPositionUtil.cs" />
@@ -87,7 +82,6 @@
      <Compile Include="Assets\Scripts\Damagable.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
      <Compile Include="Assets\Scripts\DataSO\BulletData.cs" />
-     <Compile Include="Assets\Scripts\PlayerMultiplayController.cs" />
      <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />
      <None Include="Assets\Photon\PhotonUnityNetworking\changelog.txt" />
      <None Include="Assets\Photon\PhotonLibs\changes-library.txt" />
@@ -325,17 +319,17 @@
     <Reference Include="UnityEditor.UnityConnectModule">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.1.22f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
+    <Reference Include="websocket-sharp">
+        <HintPath>D:\Nickso\UEA\TCC\Jogo\UltimateTanks\The Ultimate Tanks\Assets\Photon\PhotonLibs\WebSocket\websocket-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Photon3Unity3D">
+        <HintPath>D:\Nickso\UEA\TCC\Jogo\UltimateTanks\The Ultimate Tanks\Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
         <HintPath>D:\Nickso\UEA\TCC\Jogo\UltimateTanks\The Ultimate Tanks\Library\PackageCache\com.unity.visualscripting@1.6.1\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="clipper_library">
         <HintPath>D:\Nickso\UEA\TCC\Jogo\UltimateTanks\The Ultimate Tanks\Library\PackageCache\com.unity.cinemachine@2.7.9\Runtime\ThirdParty\clipper_library.dll</HintPath>
-    </Reference>
-    <Reference Include="Photon3Unity3D">
-        <HintPath>D:\Nickso\UEA\TCC\Jogo\UltimateTanks\The Ultimate Tanks\Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.dll</HintPath>
-    </Reference>
-    <Reference Include="websocket-sharp">
-        <HintPath>D:\Nickso\UEA\TCC\Jogo\UltimateTanks\The Ultimate Tanks\Assets\Photon\PhotonLibs\WebSocket\websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.1.22f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -807,6 +801,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="PhotonChat.csproj">
+      <Project>{d6548388-1695-2401-2efb-7f1e941560d1}</Project>
+      <Name>PhotonChat</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Editor.csproj">
+      <Project>{de973ce4-44f6-dd1b-1b7e-27c88205bf26}</Project>
+      <Name>PhotonUnityNetworking.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.csproj">
       <Project>{f87f15b4-cbf5-df89-fb2d-475db2435a3f}</Project>
       <Name>PhotonUnityNetworking.Utilities.PhotonPlayer.Editor</Name>
@@ -815,37 +817,29 @@
       <Project>{918db9f8-8d02-9173-3b07-f7d502a1401d}</Project>
       <Name>PunDemos.DemoHubEditor</Name>
     </ProjectReference>
-    <ProjectReference Include="PunDemos.DemoSlotcarEditor.csproj">
-      <Project>{262210b8-a380-5480-7331-ba3030dba508}</Project>
-      <Name>PunDemos.DemoSlotcarEditor</Name>
-    </ProjectReference>
-    <ProjectReference Include="PhotonUnityNetworking.Demos.csproj">
-      <Project>{65648f4d-fa7d-dfdd-2592-c9828959664f}</Project>
-      <Name>PhotonUnityNetworking.Demos</Name>
+    <ProjectReference Include="PhotonRealtime.csproj">
+      <Project>{8d5db5ed-8bd3-10e3-1f5a-d075d2772a86}</Project>
+      <Name>PhotonRealtime</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.csproj">
       <Project>{8be863ba-a4e9-e78b-20e0-f32be26bfa8c}</Project>
       <Name>PhotonUnityNetworking.Utilities</Name>
     </ProjectReference>
-    <ProjectReference Include="PhotonRealtime.csproj">
-      <Project>{8d5db5ed-8bd3-10e3-1f5a-d075d2772a86}</Project>
-      <Name>PhotonRealtime</Name>
-    </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.csproj">
       <Project>{4daefabf-0336-bbdc-cad9-249958a0217b}</Project>
       <Name>PhotonUnityNetworking</Name>
     </ProjectReference>
-    <ProjectReference Include="PhotonChat.csproj">
-      <Project>{d6548388-1695-2401-2efb-7f1e941560d1}</Project>
-      <Name>PhotonChat</Name>
+    <ProjectReference Include="PhotonUnityNetworking.Demos.csproj">
+      <Project>{65648f4d-fa7d-dfdd-2592-c9828959664f}</Project>
+      <Name>PhotonUnityNetworking.Demos</Name>
+    </ProjectReference>
+    <ProjectReference Include="PunDemos.DemoSlotcarEditor.csproj">
+      <Project>{262210b8-a380-5480-7331-ba3030dba508}</Project>
+      <Name>PunDemos.DemoSlotcarEditor</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.Culling.Editor.csproj">
       <Project>{f004d8e1-3c3e-156b-d2d0-a85221d146f6}</Project>
       <Name>PhotonUnityNetworking.Utilities.Culling.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="PhotonUnityNetworking.Editor.csproj">
-      <Project>{de973ce4-44f6-dd1b-1b7e-27c88205bf26}</Project>
-      <Name>PhotonUnityNetworking.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

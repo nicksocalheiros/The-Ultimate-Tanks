@@ -92,7 +92,8 @@ public class NetworkController : MonoBehaviourPunCallbacks
         login.gameObject.SetActive(false);
         match.gameObject.SetActive(false);
 
-        Instantiate(myPlayer, myPlayer.transform.position, myPlayer.transform.rotation);
+        //Instantiate(myPlayer, myPlayer.transform.position, myPlayer.transform.rotation);
+        PhotonNetwork.Instantiate(myPlayer.name, myPlayer.transform.position, myPlayer.transform.rotation, 0);
     }
 
     public override void OnDisconnected(DisconnectCause cause)
